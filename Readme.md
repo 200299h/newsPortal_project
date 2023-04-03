@@ -36,6 +36,7 @@
 
   - The user can filter the news by only one or two parameters
 
+- Website works correctly on mobile too 
 - Home page
 
 ---
