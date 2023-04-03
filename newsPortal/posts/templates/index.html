@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title%}
+    <div class="site-heading">
+        <h1>newsPortal</h1>
+        <span class="subheading">Welcome to our page</span>
+    </div>
+{% endblock %}
+
+{% block post %}
+{% include 'filter.html'%}
+<hr size="5px"/>
+{% include "post.html" %}
+{% endblock %}

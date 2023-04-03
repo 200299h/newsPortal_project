@@ -1,0 +1,16 @@
+<!-- Post preview-->
+{% for j in post_list %}
+<div class="post-preview">
+    <a href="/{{ j.id }}">
+        <h2 class="post-title">{{ j.title }}</h2>
+    </a>
+    <p class="post-meta">
+        Posted on {{ j.date }} <br>
+        Category: <b>{{ j.main_category}}</b> {% if j.category.all %} ({% for k in j.category.all %} {{ k }}{% endfor %} ) {% endif%}
+    </p>
+<!-- Divider-->
+<hr size="5px" />
+{% endfor %}
+</div>
+
+

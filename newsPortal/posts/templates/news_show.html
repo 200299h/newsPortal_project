@@ -1,0 +1,25 @@
+<!-- News detail page -->
+
+{% extends "base.html" %}
+
+{% block title%}
+    <div class="site-heading">
+        <span class="subheading"><h4>{{ post.title }}</h4></span>
+    </div>
+{% endblock %}
+
+{% block post %}
+<div class="row gx-4 gx-lg-5 justify-content-center">
+     {{ post.text | safe }}
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="post-preview">
+                <!-- Divider-->
+                <hr size="5px" />
+                <p class="post-meta">
+                    Posted on {{ post.date }} <br>
+                    Category: <b>{{ post.main_category}}</b> {% if post.category.all %} ({% for k in post.category.all %} {{ k }}{% endfor %} ) {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
