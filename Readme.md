@@ -6,6 +6,8 @@
 
 [*Project Link in GitHub*](https://github.com/200299h/newsPortal_project.git)
 
+[*Link for admin*](http://husik.pythonanywhere.com/admin)
+
 ---
 ### *Built With*
 - Backend
